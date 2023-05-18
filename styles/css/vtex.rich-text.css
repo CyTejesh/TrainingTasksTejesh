@@ -88,3 +88,34 @@
     line-height: 1.3em;
   }
 }
+
+.container--footersection{
+justify-content: end;
+margin-right: 30px;
+}
+
+.paragraph--footersection{
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  margin-top: -15px;
+}
+
+@media (min-width: 790px){
+.container--footersectionlast{
+  justify-content: end;}
+
+}
+:global(.vtex-rich-text-0-x-container--footersectionlast){
+  margin-left: 10px;
+}
+@media (max-width: 767px){
+:global(.vtex-rich-text-0-x-container--footersectionlast){
+  margin: 0px;
+}}
+
+@media (max-width: 767px){
+  :global(.vtex-rich-text-0-x-paragraph--footersectionlast){
+    font-size: 13px;
+
+  }}

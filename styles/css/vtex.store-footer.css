@@ -9,3 +9,10 @@
 .row--payment-methods {
   padding-top: 16px;
 }
+
+@media (min-width: 800px){
+.socialNetworksContainer--footersection{
+  justify-content: end;
+  margin-right: 20px;
+  margin-top: -8px;
+}}

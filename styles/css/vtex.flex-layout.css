@@ -96,3 +96,8 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+@media (max-width: 767px){
+:global(.vtex-flex-layout-0-x-flexRowContent--footersection){
+  display: flex;
+}}
