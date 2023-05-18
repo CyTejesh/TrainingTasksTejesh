@@ -1,0 +1,9 @@
+{
+  "footer-section" : {
+    "component" : "Footer"
+  },
+  "footer-mobile" : {
+    "component" : "FooterMobile"
+  }
+}
+

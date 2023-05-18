@@ -11,9 +11,41 @@
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
-      "newsletter"
+     // "newsletter",
+
+      "responsive-layout.desktop#footer",
+      "responsive-layout.mobile#footer"
+
+
     ]
   },
+  "responsive-layout.desktop#footer" : {
+    "children" :["footer-section","flex-layout.row#footer"]
+  },
+
+  "responsive-layout.mobile#footer" : {
+    "children":["footer-mobile","flex-layout.row#footermob"]
+  },
+
+  "flex-layout.row#footermob":{
+    "children" :["flex-layout.row#emailconnect"]
+  },
+
+  "flex-layout.row#emailconnect" : {
+      "children":["flex-layout.row#emailmob","flex-layout.row#connectmob"]
+  },
+
+  "flex-layout.row#emailmob":{
+    "props" : {
+      "blockClass":"footersecmob"
+    },
+    "children":["newsletter#mobile"]
+  },
+
+  "flex-layout.row#connectmob" : {
+    "children" :["rich-text#connect","social-networks","flex-layout.row#footerterms"]
+  }
+,
 
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
@@ -100,5 +132,81 @@
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
     }
+  },
+  "flex-layout.row#footer" : {
+    "children" :["flex-layout.col#email","flex-layout.col#connect"]
+  },
+  "flex-layout.col#email":{
+    "props" : {
+      "blockClass":"footersec"
+    },
+    "children":["newsletter"]
+  },
+  // "form" : {
+  //   "children" :["form-field-group#address"]
+  // },
+  // "form-field-group#address": {
+  //   "props": {
+  //     "pointer": "#/properties/address"
+  //   }
+  // },
+  "newsletter" :{
+    "props":{
+      "label" : "Sign Up to receive project antelope\nnewsletter",
+      "blockClass": "FooterNews",
+      "placeholder": "Enter your email address                                              \u2192"
+    }
+  },
+  "newsletter#mobile" :{
+    "props":{
+      "label" : "Sign Up to receive project antelope\nnewsletter",
+      "blockClass": "FooterNews",
+      "placeholder": "Enter your email address          \u2192"
+    }
+  },
+  "flex-layout.col#connect" :{
+
+    "children" :["rich-text#connect","social-networks","flex-layout.row#footerterms"]
+
+  },
+  "social-networks": {
+    "props": {
+      "blockClass":"footersection",
+      "socialNetworks": [
+        { "url": "https://instagram.com/foo", "name": "Instagram" },
+        { "url": "https://facebook.com/foo", "name": "Facebook" }
+
+      ]
+    }
+  },
+  "rich-text#connect" : {
+    "props" :{
+      "blockClass":"footersection",
+      "text" : "Connect With Us"
+    }
+  },
+  "flex-layout.row#footerterms":{
+    "props" :{
+      "blockClass":"footersection"},
+
+    "children":["rich-text#terms","rich-text#privacy","rich-text#allrights"]
+  },
+  "rich-text#terms" : {
+    "props" :{
+      "blockClass":"footersectionlast",
+      "text" : "Terms of Use"
+    }
+  },"rich-text#privacy" : {
+    "props" :{
+      "blockClass":"footersectionlast",
+      "text" : "Privacy Policy"
+    }
+  },"rich-text#allrights" : {
+    "props" :{
+      "blockClass":"footersectionlast",
+      "text" : "All Rights Reserved"
+    }
   }
+
+
 }

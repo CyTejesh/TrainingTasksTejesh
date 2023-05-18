@@ -13,44 +13,66 @@
   padding: 0px;
 }
 
-.newsletter {
-  background-color: #03054e;
+/* .newsletter {
+   background-color: #03054e;
   max-width: 1528px;
   margin: 0 auto;
-}
+} */
 
 .newsletter .container {
-  padding: 60px 10px;
+  width:100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
-.label {
-  color: #fff;
-  font-size: 26px;
+:global(.vtex-input-prefix__group){
+  border-radius: 30px;
+    width: 450px;
+    border: 1px solid;
 }
 
-.inputGroup {
+.buttonContainer--FooterNews{
+  display: none;
+}
+
+.inputGroup--FooterNews{
+  margin-left: 10px;
+}
+
+:global(.vtex-store-components-3-x-form){
+  margin: 0px;
+  padding: 0px;
+  margin-left: 39px;
+}
+
+.label--FooterNews {
+  padding: 0px;
+}
+
+/* .inputGroup {
   padding-bottom: 4px;
   display: flex;
   color: #fff;
-}
+} */
 
-.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+/* .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
   background-color: transparent;
   color: #fff;
   border: none;
-}
+} */
 
-.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+/* .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
   color: #fff;
   font-size: 16px;
-}
+} */
 
-.inputGroup :global(.vtex-button) {
+/* .inputGroup :global(.vtex-button) {
   background-color: transparent;
   color: #fff;
   border: none;
   margin-right: -24px;
-}
+} */
 
 .buttonContainer {
   padding-top: 0px;
@@ -66,11 +88,12 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .newsletter .container {
+  /* .newsletter .container {
     padding: 140px;
-  }
+  } */
   .label {
-     font-size: 40px;
+     font-size: 22px;
+     padding-left: 0px;
   }
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
@@ -111,3 +134,43 @@
 .image {
   image-rendering: -webkit-optimize-contrast;
 }
+
+@media (max-width: 767px) {
+  :global(.vtex-store-components-3-x-label--FooterNews) {
+    font-size: 20px;
+    margin: 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 767px) {
+:global(.vtex-store-components-3-x-form--FooterNews){
+  margin: 0px;
+}}
+
+@media (max-width: 767px){
+:global(.vtex-input-prefix__group){
+  width: 300px;
+}}
+
+@media (max-width: 767px){
+:global(.vtex-rich-text-0-x-paragraph--footersection) {
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  /* margin-top: -15px; */
+  align-content: flex-start;
+  display: flex;
+  /* flex-wrap: nowrap; */
+  margin-right: 200px;
+  margin-top: 20px;
+
+}}
+
+@media (max-width: 767px){
+:global(.vtex-store-footer-2-x-socialNetworksContainer--footersection){
+  margin-right: 275px;
+}}
