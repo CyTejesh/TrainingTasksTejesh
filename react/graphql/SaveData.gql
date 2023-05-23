@@ -1,0 +1,28 @@
+import { gql } from "@apollo/client";
+
+export const CREATE_DOCUMENT = gql`
+  mutation CreateDocument(
+    $name: String!
+    $email: String!
+    $subject: String!
+    $attachments: Upload
+    $message: String!
+  ) {
+    createDocument(
+      acronym: "TS"
+      document: {
+        name: $name
+        email: $email
+        subject: $subject
+        attachments: $attachments
+        message: $message
+      }
+      schema: "your_schema"
+    ) {
+      cacheId
+      id
+      href
+      documentId
+    }
+  }
+`;
