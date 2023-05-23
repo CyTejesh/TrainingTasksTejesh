@@ -4,6 +4,9 @@
   },
   "footer-mobile" : {
     "component" : "FooterMobile"
+  },
+  "contact-us" : {
+    "component" : "Contact"
   }
 }
 

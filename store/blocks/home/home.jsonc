@@ -12,6 +12,7 @@
       "rich-text#question",
       "rich-text#link",
      // "newsletter",
+     "contact-us",
 
       "responsive-layout.desktop#footer",
       "responsive-layout.mobile#footer"
